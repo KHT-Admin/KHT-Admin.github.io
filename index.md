@@ -1,3 +1,7 @@
+layout: post
+title: Markdown Style Guide
+
+
 # UniFi Simple [Traffic] Rules Demystified
 
 Simple Rules [formerly Traffic Rules] provide a higher level interface for configuring firewall policy that is applied to traffic between VLANs and from VLANs to the Internet.
