@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "posts/2024-05-31-Simple.html",
+    "href": "posts/2024-05-31-Simple.html",
+    "title": "Simple Rules",
+    "section": "",
+    "text": "Simple Rules provide a higher level interface for configuring firewall policy that is applied to traffic between VLANs and from VLANs to the Internet."
+  },
+  {
+    "objectID": "posts/2024-05-31-Simple.html#rule-syntax",
+    "href": "posts/2024-05-31-Simple.html#rule-syntax",
+    "title": "Simple Rules",
+    "section": "Rule Syntax",
+    "text": "Rule Syntax\nTraffic Rules have four main components that define:\n\nWhat the rule does:\n\nAction\n\nWhat the rule effects:\n\nSource\n\nWhat the rule applies to:\n\nDestination\n\nWhen the rule is active:\n\nSchedule"
+  },
+  {
+    "objectID": "posts/2024-05-31-Simple.html#rule-ordering",
+    "href": "posts/2024-05-31-Simple.html#rule-ordering",
+    "title": "Simple Rules",
+    "section": "Rule Ordering",
+    "text": "Rule Ordering\nTraffic Rules are automatically ordered and the ordering is updated as new rules are added.\nThe top level grouping is based on the selection in the Device/Network field.\nAt this level Rules are grouped by what they apply to, ordered from specific to general.\n\nClients\nNetworks\nAll Devices / All Networks\n\nWithin each top level group rules are ordered by the type of filtering used by each Category.\n\nDPI based - Apps, App Groups\nIP based - Domain Name, IP Address, Internet, Local Network\nGeoIP based - Region\n\nAnd finally rules within each type of filtering are evaluated.\n\nAllow\nSpeed Limit [see note “Speed Limiting Rules”]\nBlock\n\nBoth Allow and Block short circuit evaluation of Rules. As soon as a rule matches a decision is made on the basis of the matching rule.\n\nSpeed Limiting Rules\nCurrent behaviour of Speed Limit rules is to add an Allow rule at the same Device/Network &gt; Category the speed limit applies to.\n\n\nDomain Names\nThe Domain Names target uses an option in dnsmasq that updates specified ipsets with resolved IP addresses when a domain name lookup matches a user defined list. The iptables firewall rules created by Traffic Rules then use the ip addresses stored in ipsets to block client traffic from accessing the domain names.\n\nImportant Note\nThe ipsets populated from DNS lookups are cleared when Traffic Rules are added or updated. If you are testing Rules that use the Domain Name category the operating system DNS cache will prevent the ipsets from updating correctly until the cached record expires.\nTo avoid misleading test results use dig or nslookup to request the domain name. This bypasses the local cache and will tigger an update of the ipsets."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zen of Network",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
