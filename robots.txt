@@ -1,1 +1,1 @@
-Sitemap: https://KHT-Admin.github.io/sitemap.xml
+Sitemap: https://khtunifi@github.com/KHT-Admin/KHT-Admin.github.io.git/sitemap.xml
